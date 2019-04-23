@@ -1,0 +1,27 @@
+<form class="form">
+    <div class="col-md-12">
+    <input type="text" [(ngModel)]="guildName" name="guildName" placeholder="Guild name">
+</div>
+<div class="col-md-12">
+    <input type="text" [(ngModel)]="guildRealm" name="guildRealm" placeholder="Guild realm">
+</div>
+<div class="col-md-12">
+    <input type="text" [(ngModel)]="guildRegion" name="guildRegion" placeholder="Guild region">
+</div>
+<button type="submit" (click)="searchGuild()" >Search</button>
+</form>
+<div *ngIf="response">
+<p>
+    {{ response.name }}
+</p>
+<p>
+    {{ response.faction }}
+</p>
+<p>
+    {{ response.realm }}
+</p>
+<p>
+    
+       
+    </p>
+</div>
